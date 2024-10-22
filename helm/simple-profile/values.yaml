@@ -8,7 +8,7 @@ image:
   repository: abhishekf5/simple-profile
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "11457824919"
+  tag: "11458445587"
 
 ingress:
   enabled: false
