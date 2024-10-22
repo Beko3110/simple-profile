@@ -1,7 +1,7 @@
 #Containerize the go application that we have created
 
 # Start with a base image
-FROM golang:1.22.5 as base
+FROM golang:1.22.5 AS base
 
 # Set the working directory in the container
 WORKDIR /app
