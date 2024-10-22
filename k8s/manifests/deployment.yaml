@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-profile
+  labels:
+    app: simple-profile
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: simple-profile
+  template:
+    metadata:
+      labels:
+        app: simple-profile
+    spec:
+      containers:
+      - name: simple-profile
+        image: mohamed3110/simple-profile:v1
+        ports:
+        - containerPort: 8080
