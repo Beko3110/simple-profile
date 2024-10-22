@@ -24,7 +24,7 @@ jobs:
     - name: Set up Go 1.22.5
       uses: actions/setup-go@v5
       with:
-        go-version: 1.22
+        go-version: 1.22.5
 
     - name: Build
       run: go build -o simple-profile
@@ -42,7 +42,7 @@ jobs:
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
       with:
-        version: v1.56.2
+        version: v1.61.0
   
   push:
     runs-on: ubuntu-latest
